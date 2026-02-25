@@ -1,14 +1,13 @@
 package org.pure.java.project;
 
-import org.pure.java.project.model.Difficulty;
 import org.pure.java.project.model.Question;
+import org.pure.java.project.persistence.QuestionLoaderImpl;
+import org.pure.java.project.persistence.QuestionLoaderService;
+import org.pure.java.project.service.QuestionService;
+import org.pure.java.project.service.QuestionServiceImpl;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.UUID;
 
 /**
  * Author: Artyom Aroyan
@@ -16,42 +15,55 @@ import java.util.UUID;
  * Time: 23:43:53
  */
 public class Main {
-    private static final String PATH = "/Users/artyom_aroyan/Software/Java/IntelliJIDEA/Projects/Java/QuizApplication/src/main/resources/Questions.txt";
-
     static void main() {
-        try (Scanner scanner = new Scanner(System.in)) {
 
-            IO.println("Enter question");
-            String question = scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        IO.println("Choose your service - (Add, Read, Exam):");
+        String input = scanner.nextLine();
 
-            IO.println("Enter answers (separated with spaces)");
-            String answer = scanner.nextLine();
-            List<String> answers = Arrays.stream(answer.split("\\s+"))
-                    .map(String::trim)
-                    .toList();
+        QuestionService questionService = new QuestionServiceImpl();
+        QuestionLoaderService loaderService = new QuestionLoaderImpl();
 
-            IO.println("Enter correct answer (0-based)");
-            int correctIndex = scanner.nextInt();
-            scanner.nextLine();
+        switch (input.trim().toUpperCase()) {
+            case "ADD" -> questionService.save();
+            case "READ" -> {
+                IO.println("""
+                        Choose read mode:
+                        1 - Read all questions:
+                        2 - Filter by difficulty
+                        3 - Shuffle by amount and difficulty
+                        """);
 
-            IO.println("Enter difficulty (LOW, MEDIUM, HIGH)");
-            String difficulty = scanner.nextLine();
+                String readOption = scanner.nextLine().trim();
 
-            Question newQuestion = new Question(
-                    UUID.randomUUID(),
-                    question,
-                    answers,
-                    correctIndex,
-                    Difficulty.valueOf(difficulty.toUpperCase())
-            );
+                switch (readOption) {
+                    case "1" -> {
+                        List<Question> questions = loaderService.loadAllQuestions();
+                        questions.forEach(IO::println);
+                    }
 
-            try (FileWriter fileWriter = new FileWriter(PATH, true)) {
-                fileWriter.write(newQuestion.toString());
-                fileWriter.write(System.lineSeparator());
+                    case "2" -> {
+                        IO.println("Enter difficulty (LOW, MEDIUM, HIGH):");
+                        String difficulty = scanner.nextLine();
+                        List<Question> questions = loaderService.loadByDifficulty(difficulty);
+                        questions.forEach(IO::println);
+                    }
+                    case "3" -> {
+                        IO.println("Enter difficulty (LOW, MEDIUM, HIGH):");
+                        String difficulty = scanner.nextLine();
 
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+                        IO.println("Enter number of questions:");
+                        int amount = Integer.parseInt(scanner.nextLine());
+
+                        List<Question> questions = loaderService.loadShuffleQuestions(amount, difficulty);
+                        questions.forEach(IO::println);
+                    }
+                    default -> IO.println("Unknown read option:");
+                }
             }
+
+            case "EXAM" -> IO.println("coming soon!");
+            default -> IO.println("Unknown command:");
         }
     }
 }
