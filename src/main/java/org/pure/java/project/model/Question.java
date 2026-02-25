@@ -1,7 +1,6 @@
 package org.pure.java.project.model;
 
 import java.util.List;
-import java.util.UUID;
 
 /**
  * Author: Artyom Aroyan
@@ -9,22 +8,9 @@ import java.util.UUID;
  * Time: 23:56:36
  */
 public record Question(
-        UUID id,
+        Long id,
         String question,
         List<String> answers,
         int correctIndex,
-        Difficulty difficulty
-
-
-) {
-    @Override
-    public String toString() {
-        return "Question{" +
-                "id=" + id +
-                ", question='" + question + '\'' +
-                ", answers=" + answers +
-                ", correctIndex=" + correctIndex +
-                ", difficulty=" + difficulty +
-                '}';
-    }
+        Difficulty difficulty) {
 }
