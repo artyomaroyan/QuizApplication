@@ -1,0 +1,1203 @@
+[
+  {
+    "id": "1",
+    "question": "What color is the sky on a clear day?",
+    "answers": [
+      "Green",
+      "Blue",
+      "Red",
+      "Yellow"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "2",
+    "question": "How many days are in a week?",
+    "answers": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "3",
+    "question": "Which number is larger: 5 or 9?",
+    "answers": [
+      "5",
+      "9",
+      "They are equal",
+      "Cannot tell"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "4",
+    "question": "What is the opposite of hot?",
+    "answers": [
+      "Warm",
+      "Cold",
+      "Boiling",
+      "Heat"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "5",
+    "question": "How many legs does a typical dog have?",
+    "answers": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctIndex": 2,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "6",
+    "question": "Which comes first in the alphabet?",
+    "answers": [
+      "Z",
+      "A",
+      "M",
+      "B"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "7",
+    "question": "What do bees produce?",
+    "answers": [
+      "Milk",
+      "Honey",
+      "Silk",
+      "Oil"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "8",
+    "question": "How many months are in a year?",
+    "answers": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correctIndex": 2,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "9",
+    "question": "What shape has three sides?",
+    "answers": [
+      "Square",
+      "Triangle",
+      "Circle",
+      "Pentagon"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "10",
+    "question": "What do you use to write on paper?",
+    "answers": [
+      "Spoon",
+      "Pen",
+      "Plate",
+      "Fork"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "11",
+    "question": "Which is a fruit?",
+    "answers": [
+      "Apple",
+      "Carrot",
+      "Potato",
+      "Onion"
+    ],
+    "correctIndex": 0,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "12",
+    "question": "What planet do humans live on?",
+    "answers": [
+      "Mars",
+      "Venus",
+      "Earth",
+      "Jupiter"
+    ],
+    "correctIndex": 2,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "13",
+    "question": "How many hours are in one day?",
+    "answers": [
+      "12",
+      "18",
+      "24",
+      "30"
+    ],
+    "correctIndex": 2,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "14",
+    "question": "What is frozen water called?",
+    "answers": [
+      "Steam",
+      "Ice",
+      "Vapor",
+      "Mist"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "15",
+    "question": "Which animal says 'meow'?",
+    "answers": [
+      "Dog",
+      "Cat",
+      "Cow",
+      "Sheep"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "16",
+    "question": "What is 2 + 2?",
+    "answers": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "17",
+    "question": "Which is heavier (same size)?",
+    "answers": [
+      "Feather",
+      "Rock",
+      "Paper",
+      "Leaf"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "18",
+    "question": "What meal is usually eaten in the morning?",
+    "answers": [
+      "Dinner",
+      "Lunch",
+      "Breakfast",
+      "Supper"
+    ],
+    "correctIndex": 2,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "19",
+    "question": "What do plants need to grow?",
+    "answers": [
+      "Darkness",
+      "Sunlight",
+      "Plastic",
+      "Metal"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "20",
+    "question": "How many wheels does a bicycle have?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "21",
+    "question": "First day of the week in most calendars?",
+    "answers": [
+      "Monday",
+      "Sunday",
+      "Friday",
+      "Wednesday"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "22",
+    "question": "Which is a primary color?",
+    "answers": [
+      "Brown",
+      "Red",
+      "Pink",
+      "Gray"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "23",
+    "question": "What do you call a baby cat?",
+    "answers": [
+      "Puppy",
+      "Kitten",
+      "Cub",
+      "Calf"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "24",
+    "question": "Which direction does the sun rise from?",
+    "answers": [
+      "West",
+      "East",
+      "North",
+      "South"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "25",
+    "question": "How many fingers on one human hand?",
+    "answers": [
+      "4",
+      "5",
+      "6",
+      "10"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "26",
+    "question": "Capital letter of 'a'?",
+    "answers": [
+      "a",
+      "A",
+      "Aa",
+      "@"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "27",
+    "question": "Coldest season typically?",
+    "answers": [
+      "Summer",
+      "Winter",
+      "Spring",
+      "Autumn"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "28",
+    "question": "Water falling from clouds is called?",
+    "answers": [
+      "Fog",
+      "Rain",
+      "Steam",
+      "Smoke"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "29",
+    "question": "Used to tell time?",
+    "answers": [
+      "Spoon",
+      "Clock",
+      "Plate",
+      "Knife"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "30",
+    "question": "How many sides does a square have?",
+    "answers": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "31",
+    "question": "What do cows drink?",
+    "answers": [
+      "Milk",
+      "Water",
+      "Juice",
+      "Soda"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "32",
+    "question": "Which is faster?",
+    "answers": [
+      "Walking",
+      "Running",
+      "Crawling",
+      "Standing"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "33",
+    "question": "Color of grass?",
+    "answers": [
+      "Blue",
+      "Green",
+      "Red",
+      "Purple"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "34",
+    "question": "Number after 10?",
+    "answers": [
+      "9",
+      "11",
+      "12",
+      "20"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "35",
+    "question": "What do you wear on your feet outside?",
+    "answers": [
+      "Hat",
+      "Shoes",
+      "Gloves",
+      "Scarf"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "36",
+    "question": "Which is a bird?",
+    "answers": [
+      "Shark",
+      "Eagle",
+      "Dolphin",
+      "Whale"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "37",
+    "question": "How many eyes does a normal human have?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "38",
+    "question": "Opposite of full?",
+    "answers": [
+      "Heavy",
+      "Empty",
+      "Big",
+      "Tall"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "39",
+    "question": "Which comes first?",
+    "answers": [
+      "Night",
+      "Morning",
+      "Evening",
+      "Midnight"
+    ],
+    "correctIndex": 1,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "40",
+    "question": "Place where books are borrowed?",
+    "answers": [
+      "Library",
+      "Garage",
+      "Kitchen",
+      "Factory"
+    ],
+    "correctIndex": 0,
+    "difficulty": "LOW"
+  },
+  {
+    "id": "41",
+    "question": "3 apples, eat 1 — remaining?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "42",
+    "question": "Largest ocean on Earth?",
+    "answers": [
+      "Atlantic",
+      "Indian",
+      "Pacific",
+      "Arctic"
+    ],
+    "correctIndex": 2,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "43",
+    "question": "Capital of France?",
+    "answers": [
+      "Madrid",
+      "Paris",
+      "Rome",
+      "Berlin"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "44",
+    "question": "Sides in a hexagon?",
+    "answers": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "45",
+    "question": "Gas humans breathe in?",
+    "answers": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Nitrogen",
+      "Helium"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "46",
+    "question": "Red Planet?",
+    "answers": [
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Mercury"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "47",
+    "question": "Train leaves 3 PM, travels 2 hours — arrival?",
+    "answers": [
+      "4 PM",
+      "5 PM",
+      "6 PM",
+      "7 PM"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "48",
+    "question": "Boiling point of water (°C)?",
+    "answers": [
+      "90",
+      "100",
+      "120",
+      "80"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "49",
+    "question": "Instrument with keys, pedals, strings?",
+    "answers": [
+      "Guitar",
+      "Piano",
+      "Drum",
+      "Violin"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "50",
+    "question": "Past tense of 'run'?",
+    "answers": [
+      "Runned",
+      "Ran",
+      "Running",
+      "Runs"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "51",
+    "question": "Egypt is in which continent?",
+    "answers": [
+      "Europe",
+      "Asia",
+      "Africa",
+      "Australia"
+    ],
+    "correctIndex": 2,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "52",
+    "question": "Degrees in a right angle?",
+    "answers": [
+      "45",
+      "90",
+      "180",
+      "360"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "53",
+    "question": "Organ that pumps blood?",
+    "answers": [
+      "Liver",
+      "Heart",
+      "Lung",
+      "Kidney"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "54",
+    "question": "If today is Wednesday, tomorrow is?",
+    "answers": [
+      "Tuesday",
+      "Thursday",
+      "Friday",
+      "Monday"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "55",
+    "question": "Square root of 64?",
+    "answers": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "56",
+    "question": "Language of Brazil?",
+    "answers": [
+      "Spanish",
+      "Portuguese",
+      "French",
+      "English"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "57",
+    "question": "H2O is?",
+    "answers": [
+      "Oxygen",
+      "Water",
+      "Hydrogen",
+      "Salt"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "58",
+    "question": "Larger unit?",
+    "answers": [
+      "Meter",
+      "Kilometer",
+      "Centimeter",
+      "Millimeter"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "59",
+    "question": "Who wrote Romeo and Juliet?",
+    "answers": [
+      "Charles Dickens",
+      "William Shakespeare",
+      "Mark Twain",
+      "Homer"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "60",
+    "question": "Soccer players on field per team?",
+    "answers": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correctIndex": 2,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "61",
+    "question": "Hardest natural substance?",
+    "answers": [
+      "Gold",
+      "Iron",
+      "Diamond",
+      "Silver"
+    ],
+    "correctIndex": 2,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "62",
+    "question": "Double of 7?",
+    "answers": [
+      "12",
+      "14",
+      "16",
+      "21"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "63",
+    "question": "Capital of Japan?",
+    "answers": [
+      "Kyoto",
+      "Tokyo",
+      "Osaka",
+      "Seoul"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "64",
+    "question": "Universal donor blood type (basic)?",
+    "answers": [
+      "AB+",
+      "O−",
+      "A+",
+      "B−"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "65",
+    "question": "Animals that eat only plants?",
+    "answers": [
+      "Carnivores",
+      "Herbivores",
+      "Omnivores",
+      "Predators"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "66",
+    "question": "15% of 100?",
+    "answers": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "67",
+    "question": "Brain of the computer?",
+    "answers": [
+      "RAM",
+      "CPU",
+      "Monitor",
+      "Keyboard"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "68",
+    "question": "Longest river (common answer)?",
+    "answers": [
+      "Amazon",
+      "Nile",
+      "Yangtze",
+      "Mississippi"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "69",
+    "question": "Rectangle area (5×3)?",
+    "answers": [
+      "8",
+      "15",
+      "10",
+      "20"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "70",
+    "question": "Closest planet to Sun?",
+    "answers": [
+      "Venus",
+      "Mercury",
+      "Earth",
+      "Mars"
+    ],
+    "correctIndex": 1,
+    "difficulty": "MEDIUM"
+  },
+  {
+    "id": "71",
+    "question": "Farmer had 17 sheep, all but 9 died. Remaining?",
+    "answers": [
+      "8",
+      "9",
+      "17",
+      "0"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "72",
+    "question": "Next in sequence: 2,4,8,16, ?",
+    "answers": [
+      "24",
+      "32",
+      "18",
+      "20"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "73",
+    "question": "Rearranged 'CIFAIPC' becomes?",
+    "answers": [
+      "Ocean",
+      "Pacific",
+      "Africa",
+      "Specific"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "74",
+    "question": "Two fathers and two sons catch 3 fish — how?",
+    "answers": [
+      "One shared",
+      "They are grandfather, father, son",
+      "Miscount",
+      "Impossible"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "75",
+    "question": "Value of 2⁵?",
+    "answers": [
+      "16",
+      "32",
+      "64",
+      "25"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "76",
+    "question": "5 machines make 5 items in 5 minutes. 100 machines make 100 items in?",
+    "answers": [
+      "5 minutes",
+      "10 minutes",
+      "20 minutes",
+      "100 minutes"
+    ],
+    "correctIndex": 0,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "77",
+    "question": "Equal and opposite reaction law?",
+    "answers": [
+      "Newton’s First",
+      "Newton’s Third",
+      "Newton’s Second",
+      "Ohm’s Law"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "78",
+    "question": "Bat & ball = $1.10, bat $1 more. Ball costs?",
+    "answers": [
+      "$0.05",
+      "$0.10",
+      "$0.15",
+      "$0.01"
+    ],
+    "correctIndex": 0,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "79",
+    "question": "Binary of decimal 10?",
+    "answers": [
+      "1010",
+      "1001",
+      "1110",
+      "1100"
+    ],
+    "correctIndex": 0,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "80",
+    "question": "General relativity scientist?",
+    "answers": [
+      "Newton",
+      "Einstein",
+      "Tesla",
+      "Galileo"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "81",
+    "question": "Derivative of x²?",
+    "answers": [
+      "x",
+      "2x",
+      "x²",
+      "2"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "82",
+    "question": "WWII ended in?",
+    "answers": [
+      "1944",
+      "1945",
+      "1939",
+      "1950"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "83",
+    "question": "Chemical symbol for gold?",
+    "answers": [
+      "Ag",
+      "Au",
+      "Gd",
+      "Go"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "84",
+    "question": "Traveling west globally — time zones?",
+    "answers": [
+      "Increase",
+      "Decrease",
+      "Stay same",
+      "Random"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "85",
+    "question": "Smallest prime > 100?",
+    "answers": [
+      "101",
+      "103",
+      "107",
+      "109"
+    ],
+    "correctIndex": 0,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "86",
+    "question": "FIFO structure?",
+    "answers": [
+      "Stack",
+      "Queue",
+      "Tree",
+      "Graph"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "87",
+    "question": "Capital of Canada?",
+    "answers": [
+      "Toronto",
+      "Ottawa",
+      "Vancouver",
+      "Montreal"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "88",
+    "question": "π approximately (2 decimals)?",
+    "answers": [
+      "3.12",
+      "3.14",
+      "3.41",
+      "3.16"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "89",
+    "question": "O(n log n) sorting algorithm?",
+    "answers": [
+      "Bubble sort",
+      "Merge sort",
+      "Selection sort",
+      "Linear search"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "90",
+    "question": "Volume of cube (side 4)?",
+    "answers": [
+      "16",
+      "64",
+      "32",
+      "48"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "91",
+    "question": "Word same forward/backward?",
+    "answers": [
+      "Synonym",
+      "Palindrome",
+      "Acronym",
+      "Homonym"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "92",
+    "question": "OSI layer for routing?",
+    "answers": [
+      "Transport",
+      "Network",
+      "Session",
+      "Data Link"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "93",
+    "question": "Next prime after 29?",
+    "answers": [
+      "30",
+      "31",
+      "33",
+      "37"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "94",
+    "question": "Chess piece moves in L-shape?",
+    "answers": [
+      "Bishop",
+      "Knight",
+      "Rook",
+      "Queen"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "95",
+    "question": "Main gas in atmosphere?",
+    "answers": [
+      "Oxygen",
+      "Nitrogen",
+      "Carbon dioxide",
+      "Helium"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "96",
+    "question": "Expected heads in 10 fair flips?",
+    "answers": [
+      "2",
+      "5",
+      "8",
+      "10"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "97",
+    "question": "SQL stands for?",
+    "answers": [
+      "Structured Query Language",
+      "Simple Query Logic",
+      "Sequential Question Language",
+      "Standard Queue Language"
+    ],
+    "correctIndex": 0,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "98",
+    "question": "Planet with most moons (current leader)?",
+    "answers": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Neptune"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "99",
+    "question": "Binary search complexity?",
+    "answers": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)",
+      "O(1)"
+    ],
+    "correctIndex": 1,
+    "difficulty": "HIGH"
+  },
+  {
+    "id": "100",
+    "question": "Roman numeral XL equals?",
+    "answers": [
+      "40",
+      "60",
+      "90",
+      "20"
+    ],
+    "correctIndex": 0,
+    "difficulty": "HIGH"
+  }
+]
+
