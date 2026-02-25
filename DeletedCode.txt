@@ -1,0 +1,35 @@
+private static final String TXT_PATH = "/Users/artyom_aroyan/Software/Java/IntelliJIDEA/Projects/Java/QuizApplication/src/main/resources/Questions.txt";
+    try (Scanner scanner = new Scanner(System.in)) {
+    IO.println("Enter question");
+    String question = scanner.nextLine();
+
+    IO.println("Enter answers (separated with spaces)");
+    String answer = scanner.nextLine();
+    List<String> answers = Arrays.stream(answer.split("\\s+"))
+            .map(String::trim)
+            .toList();
+
+    IO.println("Enter correct answer (0-based)");
+    int correctIndex = scanner.nextInt();
+    scanner.nextLine();
+
+    IO.println("Enter difficulty (LOW, MEDIUM, HIGH)");
+    String difficulty = scanner.nextLine();
+
+    Question newQuestion = new Question(
+            UUID.randomUUID(),
+            question,
+            answers,
+            correctIndex,
+            Difficulty.valueOf(difficulty.toUpperCase())
+    );
+
+    try (FileWriter fileWriter = new FileWriter(PATH, true)) {
+        fileWriter.write(newQuestion.toString());
+        fileWriter.write(System.lineSeparator());
+        IO.println("Question added successfully!");
+
+    } catch (IOException e) {
+        throw new RuntimeException(e);
+    }
+}
