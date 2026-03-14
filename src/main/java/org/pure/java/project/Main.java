@@ -1,7 +1,7 @@
 package org.pure.java.project;
 
-import org.pure.java.project.persistence.QuestionLoaderImpl;
-import org.pure.java.project.persistence.QuestionLoaderService;
+import org.pure.java.project.service.QuestionLoaderImpl;
+import org.pure.java.project.service.QuestionLoaderService;
 import org.pure.java.project.service.QuestionService;
 import org.pure.java.project.service.QuestionServiceImpl;
 import org.pure.java.project.ui.ConsoleQuiz;
@@ -13,8 +13,8 @@ import org.pure.java.project.ui.ConsoleQuiz;
  */
 public class Main {
     static void main() {
-        QuestionService questionService = new QuestionServiceImpl();
         QuestionLoaderService questionLoaderService = new QuestionLoaderImpl();
+        QuestionService questionService = new QuestionServiceImpl(questionLoaderService);
 
         ConsoleQuiz consoleQuiz = new ConsoleQuiz(questionService, questionLoaderService);
         consoleQuiz.view();

@@ -87,3 +87,15 @@ private static final String TXT_PATH = "/Users/artyom_aroyan/Software/Java/Intel
         }*/
 
 ------------------------------------------------------------------------------------------------------------------------
+    private List<Question> readQuestion() {
+        if (!isFileReadable()) {
+            return Collections.emptyList();
+        }
+        try {
+            return OBJECT_MAPPER.readValue(QUESTION_FILE, new TypeReference<>() {});
+        } catch (Exception ex) {
+            LOGGER.log(Level.SEVERE, "Failed to read questions: {}", ex.getMessage());
+            return Collections.emptyList();
+        }
+    }
+------------------------------------------------------------------------------------------------------------------------

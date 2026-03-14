@@ -1,4 +1,4 @@
-package org.pure.java.project.persistence;
+package org.pure.java.project.service;
 
 import org.pure.java.project.model.Question;
 
@@ -12,5 +12,5 @@ import java.util.List;
 public interface QuestionLoaderService {
     List<Question> loadAllQuestions();
     List<Question> loadByDifficulty(String level);
-    List<Question> loadShuffleQuestions(int amount, String level);
+    List<Question> loadShuffleQuestions(String level, int amount);
 }
