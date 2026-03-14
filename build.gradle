@@ -15,6 +15,7 @@ dependencies {
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
     implementation("tools.jackson.core:jackson-databind:3.1.0-rc1")
+    implementation("tools.jackson.dataformat:jackson-dataformat-yaml:3.1.0")
 }
 
 test {

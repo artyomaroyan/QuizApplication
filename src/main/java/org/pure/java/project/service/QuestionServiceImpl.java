@@ -15,6 +15,11 @@ import java.util.*;
  */
 public class QuestionServiceImpl implements QuestionService {
     private static final String JSON_PATH = "/Users/artyom_aroyan/Software/Java/IntelliJIDEA/Projects/Java/QuizApplication/src/main/resources/Question.json";
+    private final QuestionLoaderService questionLoaderService;
+
+    public QuestionServiceImpl(QuestionLoaderService questionLoaderService) {
+        this.questionLoaderService = questionLoaderService;
+    }
 
     @Override
     public String save() {
@@ -47,17 +52,22 @@ public class QuestionServiceImpl implements QuestionService {
         String difficulty = scanner.nextLine();
 
         Question newQuestion = new Question(
-                1L,
+                setId(),
                 inputQuestion,
                 answers,
                 correctIndex,
                 Difficulty.valueOf(difficulty.toUpperCase())
         );
-
         questions.add(newQuestion);
-
         mapper.writerWithDefaultPrettyPrinter().writeValue(file, questions);
-
         return "Question added successfully!";
+    }
+
+    private Long setId() {
+        return questionLoaderService.loadAllQuestions()
+                .stream()
+                .mapToLong(Question::id)
+                .max()
+                .orElse(0L) + 1;
     }
 }

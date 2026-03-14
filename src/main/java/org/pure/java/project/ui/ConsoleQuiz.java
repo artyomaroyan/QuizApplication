@@ -1,7 +1,7 @@
 package org.pure.java.project.ui;
 
 import org.pure.java.project.model.Question;
-import org.pure.java.project.persistence.QuestionLoaderService;
+import org.pure.java.project.service.QuestionLoaderService;
 import org.pure.java.project.service.QuestionService;
 
 import java.util.List;
@@ -59,7 +59,7 @@ public class ConsoleQuiz {
                             String difficulty = SCANNER.nextLine();
                             IO.println("Enter number of questions:");
                             int amount = Integer.parseInt(SCANNER.nextLine());
-                            List<Question> questions = questionLoaderService.loadShuffleQuestions(amount, difficulty);
+                            List<Question> questions = questionLoaderService.loadShuffleQuestions(difficulty, amount);
                             questions.forEach(IO::println);
                         }
                         default -> IO.println("Unknown read option:");
