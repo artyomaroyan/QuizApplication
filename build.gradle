@@ -16,6 +16,7 @@ dependencies {
 
     implementation("tools.jackson.core:jackson-databind:3.1.0-rc1")
     implementation("tools.jackson.dataformat:jackson-dataformat-yaml:3.1.0")
+    implementation("org.slf4j:slf4j-api:2.1.0-alpha1")
 }
 
 test {

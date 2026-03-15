@@ -99,3 +99,171 @@ private static final String TXT_PATH = "/Users/artyom_aroyan/Software/Java/Intel
         }
     }
 ------------------------------------------------------------------------------------------------------------------------
+//    private static final String JSON_PATH = "/Users/artyom_aroyan/Software/Java/IntelliJIDEA/Projects/Java/QuizApplication/src/main/resources/Question.json";
+//    private static final ObjectMapper OBJECT_MAPPER = new ObjectMapper();
+//    private static final File QUESTION_FILE = new File(JSON_PATH);
+//
+//    private List<Question> cache;
+//
+//    @Override
+//    public List<Question> loadAllQuestions() {
+//        return readQuestion();
+//    }
+//
+//    @Override
+//    public List<Question> loadByDifficulty(String level) {
+//            Difficulty difficulty = Difficulty.valueOf(level.trim().toUpperCase());
+//            return readQuestion().stream()
+//                    .filter(q -> q.difficulty() == difficulty)
+//                    .toList();
+//    }
+//
+//    @Override
+//    public List<Question> loadShuffleQuestions(String difficulty, int amount) {
+//        List<Question> filtered = loadByDifficulty(difficulty);
+//        if (filtered.isEmpty()) return Collections.emptyList();
+//        List<Question> shuffled = new ArrayList<>(filtered);
+//        Collections.shuffle(shuffled);
+//        return shuffled.stream()
+//                .limit(amount)
+//                .toList();
+//    }
+//
+//    private List<Question> readQuestion() {
+//        if (cache != null) {
+//            return cache;
+//        }
+//
+//        if (!isFileReadable()) {
+//            LOGGER.warning("Question file not found or empty.");
+//            cache = List.of();
+//            return cache;
+//        }
+//
+//        try {
+//            cache = List.of(OBJECT_MAPPER.readValue(QUESTION_FILE, new TypeReference<>() {}));
+//            return cache;
+//        } catch (Exception ex) {
+//            LOGGER.log(Level.SEVERE, "Failed to read questions: {}", ex.getMessage());
+//            cache = List.of();
+//            return cache;
+//        }
+//    }
+//
+//    private boolean isFileReadable() {
+//        if (!QUESTION_FILE.exists()) {
+//            LOGGER.log(Level.WARNING, "Question file does not exist: {}", QUESTION_FILE.getAbsolutePath());
+//            return false;
+//        }
+//
+//        if (!QUESTION_FILE.canRead()) {
+//            LOGGER.log(Level.WARNING, "Question file exists but cannot be read: {}", QUESTION_FILE.getAbsolutePath());
+//            return false;
+//        }
+//
+//        if (QUESTION_FILE.length() == 0) {
+//            LOGGER.log(Level.WARNING, "Question file is empty: {}", QUESTION_FILE.getAbsolutePath());
+//            return false;
+//        }
+//        return true;
+//    }
+------------------------------------------------------------------------------------------------------------------------
+//    private final QuestionService questionService;
+//    private final QuestionLoaderService questionLoaderService;
+//
+//    private static final Scanner SCANNER = new Scanner(System.in);
+//
+//    public ConsoleQuiz(QuestionService questionService, QuestionLoaderService questionLoaderService) {
+//        this.questionService = questionService;
+//        this.questionLoaderService = questionLoaderService;
+//    }
+//
+//    public void view() {
+//        IO.println("Choose your service - (Add, Read, Exam):");
+//        String input = SCANNER.nextLine();
+//
+//        try {
+//            ServiceType serviceType = ServiceType.valueOf(input.trim().toUpperCase());
+//
+//            switch (serviceType) {
+//                case ADD -> questionService.save();
+//                case READ -> {
+//                    IO.println("""
+//                            Choose read mode:
+//                            1 - Read all questions:
+//                            2 - Filter by difficulty
+//                            3 - Shuffle by amount and difficulty
+//                            """);
+//                    String readOption = SCANNER.nextLine().trim();
+//
+//                    switch (readOption) {
+//                        case "1" -> {
+//                            List<Question> questions = questionLoaderService.loadAllQuestions();
+//                            questions.forEach(IO::println);
+//                        }
+//
+//                        case "2" -> {
+//                            IO.println("Enter difficulty (LOW, MEDIUM, HIGH):");
+//                            String difficulty = SCANNER.nextLine();
+//                            List<Question> questions = questionLoaderService.loadByDifficulty(difficulty);
+//                            questions.forEach(IO::println);
+//                        }
+//
+//                        case "3" -> {
+//                            IO.println("Enter difficulty (LOW, MEDIUM, HIGH):");
+//                            String difficulty = SCANNER.nextLine();
+//                            IO.println("Enter number of questions:");
+//                            int amount = Integer.parseInt(SCANNER.nextLine());
+//                            List<Question> questions = questionLoaderService.loadShuffleQuestions(difficulty, amount);
+//                            questions.forEach(IO::println);
+//                        }
+//                        default -> IO.println("Unknown read option:");
+//                    }
+//                }
+//
+//                case EXAM -> IO.println("Coming soon!");
+//                default -> IO.println("Unknown command:");
+//            }
+//        } catch (IllegalArgumentException ex) {
+//            IO.println("Unknown command:" + ex.getMessage());
+//        }
+//    }
+------------------------------------------------------------------------------------------------------------------------
+//        Scanner scanner = new Scanner(System.in);
+//        ObjectMapper mapper = new ObjectMapper();
+//        File file = new File(JSON_PATH);
+//
+//        List<Question> questions;
+//        if (file.exists() && file.length() > 0) {
+//            questions = mapper.readValue(file, new TypeReference<>() {});
+//        } else {
+//            questions = new ArrayList<>();
+//        }
+//
+//        IO.println("Enter question:");
+//        String inputQuestion = scanner.nextLine();
+//
+//        IO.println("Enter answers (separated with spaces):");
+//        String answer = scanner.nextLine();
+//        List<String> answers = Arrays.stream(answer.split("\\s+"))
+//                .map(String::trim)
+//                .toList();
+//
+//        IO.println("Enter correct answer (0-based):");
+//        int correctIndex = scanner.nextInt();
+//        scanner.nextLine();
+//
+//        IO.println("Enter difficulty (EASY, MEDIUM, HIGH):");
+//        String difficulty = scanner.nextLine();
+//
+//        Question newQuestion = new Question(
+//                setId(),
+//                inputQuestion,
+//                answers,
+//                correctIndex,
+//                Difficulty.valueOf(difficulty.toUpperCase())
+//        );
+//        questions.add(newQuestion);
+//        mapper.writerWithDefaultPrettyPrinter().writeValue(file, questions);
+//        return "Question added successfully!";
+------------------------------------------------------------------------------------------------------------------------
