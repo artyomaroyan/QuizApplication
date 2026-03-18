@@ -1,4 +1,4 @@
-package org.pure.java.project.model;
+package org.pure.java.project.model.enums;
 
 /**
  * Author: Artyom Aroyan
@@ -6,7 +6,7 @@ package org.pure.java.project.model;
  * Time: 23:58:50
  */
 public enum Difficulty {
-    LOW,
+    EASY,
     MEDIUM,
     HIGH
 }

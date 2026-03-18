@@ -11,6 +11,6 @@ import java.util.List;
  */
 public interface QuestionLoaderService {
     List<Question> loadAllQuestions();
-    List<Question> loadByDifficulty(String level);
-    List<Question> loadShuffleQuestions(String level, int amount);
+    List<Question> loadByDifficulty(String difficulty);
+    List<Question> loadShuffleQuestions(String difficulty, int amount);
 }
