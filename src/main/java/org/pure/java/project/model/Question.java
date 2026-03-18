@@ -1,5 +1,7 @@
 package org.pure.java.project.model;
 
+import org.pure.java.project.model.enums.Difficulty;
+
 import java.util.List;
 
 /**

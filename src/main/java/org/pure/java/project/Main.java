@@ -1,10 +1,8 @@
 package org.pure.java.project;
 
-import org.pure.java.project.service.QuestionLoaderImpl;
-import org.pure.java.project.service.QuestionLoaderService;
-import org.pure.java.project.service.QuestionService;
-import org.pure.java.project.service.QuestionServiceImpl;
-import org.pure.java.project.ui.ConsoleQuiz;
+import org.pure.java.project.ui.ConsoleUI;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Author: Artyom Aroyan
@@ -12,11 +10,17 @@ import org.pure.java.project.ui.ConsoleQuiz;
  * Time: 23:43:53
  */
 public class Main {
-    static void main() {
-        QuestionLoaderService questionLoaderService = new QuestionLoaderImpl();
-        QuestionService questionService = new QuestionServiceImpl(questionLoaderService);
+    private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
-        ConsoleQuiz consoleQuiz = new ConsoleQuiz(questionService, questionLoaderService);
-        consoleQuiz.view();
+    static void main() {
+        try {
+            AppConfiguration configuration = AppConfiguration.load();
+            ApplicationContext context = ApplicationContext.initialize(configuration);
+            ConsoleUI consoleUI = context.getConsoleUI();
+            consoleUI.start();
+        } catch (Exception ex) {
+            LOGGER.error("Failed to start application", ex);
+            System.err.println("Application failed to start: " + ex.getMessage());
+        }
     }
 }
