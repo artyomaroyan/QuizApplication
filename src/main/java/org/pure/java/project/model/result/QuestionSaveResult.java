@@ -1,6 +1,6 @@
 package org.pure.java.project.model.result;
 
-import org.pure.java.project.model.Question;
+import org.pure.java.project.model.entity.Question;
 
 import java.util.Collections;
 import java.util.List;

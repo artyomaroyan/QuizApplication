@@ -1,6 +1,7 @@
-package org.pure.java.project.repository;
+package org.pure.java.project.adapter;
 
-import org.pure.java.project.model.Question;
+import org.pure.java.project.model.entity.Question;
+import org.pure.java.project.repository.QuestionRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import tools.jackson.core.type.TypeReference;

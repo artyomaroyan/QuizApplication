@@ -1,4 +1,4 @@
-package org.pure.java.project.model;
+package org.pure.java.project.model.entity;
 
 import org.pure.java.project.model.enums.Difficulty;
 

@@ -1,6 +1,6 @@
 package org.pure.java.project.service;
 
-import org.pure.java.project.model.Question;
+import org.pure.java.project.model.entity.Question;
 import org.pure.java.project.model.enums.Difficulty;
 import org.pure.java.project.repository.QuestionRepository;
 import org.slf4j.Logger;

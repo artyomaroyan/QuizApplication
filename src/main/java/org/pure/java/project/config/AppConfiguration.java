@@ -1,4 +1,4 @@
-package org.pure.java.project;
+package org.pure.java.project.config;
 
 import java.io.IOException;
 import java.io.InputStream;
