@@ -1,2 +1,0 @@
-133d2ca0-9e98-435e-aa17-183937762bd0|q1|[a, s, d, f]|2|LOW
-Question{id=ac85d583-264b-4dd1-94a9-ca2d16c7bde2, question='q2', answers=[a, q, w, e], correctIndex=1, difficulty=LOW}

@@ -6,4 +6,5 @@ package org.pure.java.project.service;
  * Time: 00:01:40
  */
 public interface QuizService {
+    void startExam();
 }
