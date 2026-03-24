@@ -1,12 +1,19 @@
 package org.pure.java.project.service;
 
-import org.pure.java.project.model.Difficulty;
-import org.pure.java.project.model.Question;
-import tools.jackson.core.type.TypeReference;
-import tools.jackson.databind.ObjectMapper;
+import org.pure.java.project.model.validator.InputValidator;
+import org.pure.java.project.model.entity.Question;
+import org.pure.java.project.model.dto.QuestionInputDto;
+import org.pure.java.project.model.enums.Difficulty;
+import org.pure.java.project.model.result.QuestionSaveResult;
+import org.pure.java.project.model.result.ValidationResult;
+import org.pure.java.project.repository.QuestionRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.util.*;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 /**
  * Author: Artyom Aroyan
@@ -14,58 +21,68 @@ import java.util.*;
  * Time: 02:06:23
  */
 public class QuestionServiceImpl implements QuestionService {
-    private static final String JSON_PATH = "/Users/artyom_aroyan/Software/Java/IntelliJIDEA/Projects/Java/QuizApplication/src/main/resources/Question.json";
+    private static final Logger LOGGER = LoggerFactory.getLogger(QuestionServiceImpl.class);
     private final QuestionLoaderService questionLoaderService;
+    private final QuestionRepository questionRepository;
+    private final InputValidator inputValidator;
 
-    public QuestionServiceImpl(QuestionLoaderService questionLoaderService) {
-        this.questionLoaderService = questionLoaderService;
+    public QuestionServiceImpl(QuestionLoaderService questionLoaderService, QuestionRepository questionRepository, InputValidator inputValidator) {
+        this.questionLoaderService = Objects.requireNonNull(questionLoaderService);
+        this.questionRepository = Objects.requireNonNull(questionRepository);
+        this.inputValidator = Objects.requireNonNull(inputValidator);
     }
 
     @Override
-    public String save() {
+    public QuestionSaveResult save(QuestionInputDto inputDto) {
+        LOGGER.info("Attempting to save question");
 
-        Scanner scanner = new Scanner(System.in);
-        ObjectMapper mapper = new ObjectMapper();
-        File file = new File(JSON_PATH);
-
-        List<Question> questions;
-        if (file.exists() && file.length() > 0) {
-            questions = mapper.readValue(file, new TypeReference<>() {});
-        } else {
-            questions = new ArrayList<>();
+        ValidationResult validation = inputValidator.validate(inputDto);
+        if (!validation.isValid()) {
+            LOGGER.warn("Invalid question input: {}", validation.getAllErrorsAsString());
+            return QuestionSaveResult.failure(validation.errors());
         }
 
-        IO.println("Enter question:");
-        String inputQuestion = scanner.nextLine();
+        try {
+            List<Question> existingQuestions = questionLoaderService.loadAllQuestions();
+            boolean isDuplicate = existingQuestions.stream()
+                    .anyMatch( q -> q.question().equalsIgnoreCase(inputDto.question().trim()));
 
-        IO.println("Enter answers (separated with spaces):");
-        String answer = scanner.nextLine();
-        List<String> answers = Arrays.stream(answer.split("\\s+"))
-                .map(String::trim)
-                .toList();
+            if (isDuplicate) {
+                String error = "Question already exists: " + inputDto.question();
+                LOGGER.warn(error);
+                return QuestionSaveResult.failure(List.of(error));
+            }
 
-        IO.println("Enter correct answer (0-based):");
-        int correctIndex = scanner.nextInt();
-        scanner.nextLine();
+            Question question = createQuestion(inputDto);
+            Question saved = questionRepository.save(question);
 
-        IO.println("Enter difficulty (LOW, MEDIUM, HIGH):");
-        String difficulty = scanner.nextLine();
+            if (questionLoaderService instanceof QuestionLoaderServiceImpl) {
+                ((QuestionLoaderServiceImpl) questionLoaderService).clearCache();
+            }
 
-        Question newQuestion = new Question(
-                setId(),
-                inputQuestion,
-                answers,
-                correctIndex,
-                Difficulty.valueOf(difficulty.toUpperCase())
-        );
-        questions.add(newQuestion);
-        mapper.writerWithDefaultPrettyPrinter().writeValue(file, questions);
-        return "Question added successfully!";
+            LOGGER.info("Question saved successfully with ID: {}", saved.id());
+            return QuestionSaveResult.success("Question added successfully!", saved);
+        } catch (IOException ex) {
+            LOGGER.error("Failed to save question", ex);
+            return QuestionSaveResult.failure(List.of("Failed to save: " + ex.getMessage()));
+        }
     }
 
-    private Long setId() {
-        return questionLoaderService.loadAllQuestions()
-                .stream()
+    private Question createQuestion(QuestionInputDto inputDto) {
+        Long nextId = generateNextId();
+        Difficulty difficulty = Difficulty.valueOf(inputDto.difficulty().toUpperCase());
+
+        return new Question(
+                nextId,
+                inputDto.question(),
+                new ArrayList<>(inputDto.answers()),
+                inputDto.correctIndex(),
+                difficulty
+        );
+    }
+
+    private Long generateNextId() {
+        return questionLoaderService.loadAllQuestions().stream()
                 .mapToLong(Question::id)
                 .max()
                 .orElse(0L) + 1;
