@@ -1,6 +1,6 @@
 package org.pure.java.project.repository;
 
-import org.pure.java.project.model.Question;
+import org.pure.java.project.model.entity.Question;
 
 import java.io.IOException;
 import java.util.List;

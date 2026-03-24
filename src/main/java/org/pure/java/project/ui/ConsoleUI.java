@@ -1,7 +1,7 @@
 package org.pure.java.project.ui;
 
 import org.pure.java.project.model.enums.MainMenuOption;
-import org.pure.java.project.model.Question;
+import org.pure.java.project.model.entity.Question;
 import org.pure.java.project.model.dto.QuestionInputDto;
 import org.pure.java.project.model.result.QuestionSaveResult;
 import org.pure.java.project.service.QuestionLoaderService;
@@ -70,7 +70,7 @@ public class ConsoleUI {
             String question = inputHandler.readLine("Enter question:");
             List<String> answers = inputHandler.readAnswers("Enter answers (separate with spaces or commas):");
             int correctIndex = inputHandler.readInt("Enter correct answer index (0-based):");
-            String difficulty = inputHandler.readLine("Enter difficulty (EASY, MEDIUM, HARD):");
+            String difficulty = inputHandler.readLine("Enter difficulty (EASY, MEDIUM, HIGH):");
             QuestionInputDto inputDto = new QuestionInputDto(question, answers, correctIndex, difficulty);
             QuestionSaveResult result = questionService.save(inputDto);
 
@@ -134,7 +134,7 @@ public class ConsoleUI {
                     .append(": ")
                     .append(answers.get(i));
             if (i == question.correctIndex()) {
-                sb.append("OK");
+                sb.append(" Correct answer");
             }
             sb.append("\n");
         }
@@ -142,12 +142,12 @@ public class ConsoleUI {
     }
 
     private void handleReadByDifficulty() {
-        String difficulty = inputHandler.readLine("Enter difficulty (EASY, MEDIUM, HARD):");
+        String difficulty = inputHandler.readLine("Enter difficulty (EASY, MEDIUM, HIGH):");
         displayQuestions(loaderService.loadByDifficulty(difficulty));
     }
 
     private void handleReadShuffled() {
-        String difficulty = inputHandler.readLine("Enter difficulty (EASY, MEDIUM, HARD):");
+        String difficulty = inputHandler.readLine("Enter difficulty (EASY, MEDIUM, HIGH):");
         int amount = inputHandler.readInt("Enter number of questions:");
         displayQuestions(loaderService.loadShuffleQuestions(difficulty, amount));
     }
