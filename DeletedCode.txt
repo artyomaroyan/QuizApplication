@@ -361,3 +361,16 @@ private static final String TXT_PATH = "/Users/artyom_aroyan/Software/Java/Intel
 //}
 
 ------------------------------------------------------------------------------------------------------------------------
+
+        List<Question> questionList = new ArrayList<>();
+        // this should collect user answers,
+        // where Long should be questions ID, and Object should be an answer,
+        // since there are different type of answers (int, String) for now I will use Object until find better variant.
+        for (Question questions : questionList) {
+            Map<Long, String> questionAnswer = new HashMap<>();
+            questionAnswer.put(questions.id(), inputHandler.readLine());
+            IO.println("Result: " + questionAnswer);
+        }
+            return null;
+
+------------------------------------------------------------------------------------------------------------------------

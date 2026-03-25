@@ -3,10 +3,7 @@ package org.pure.java.project.config;
 import org.pure.java.project.adapter.QuestionRepositoryAdapter;
 import org.pure.java.project.model.validator.InputValidator;
 import org.pure.java.project.repository.QuestionRepository;
-import org.pure.java.project.service.QuestionLoaderService;
-import org.pure.java.project.service.QuestionLoaderServiceImpl;
-import org.pure.java.project.service.QuestionService;
-import org.pure.java.project.service.QuestionServiceImpl;
+import org.pure.java.project.service.*;
 import org.pure.java.project.ui.ConsoleUI;
 import org.pure.java.project.ui.UserInputHandler;
 import tools.jackson.databind.ObjectMapper;
@@ -28,8 +25,9 @@ public record ApplicationContext(
         QuestionRepository repository = new QuestionRepositoryAdapter(objectMapper, configuration.getQuestionsFilePath());
         QuestionLoaderService loader = new QuestionLoaderServiceImpl(repository, configuration.isCacheEnabled());
         InputValidator validator = new InputValidator();
+        QuizService quizService = new QuizServiceImpl(new UserInputHandler());
         QuestionService service = new QuestionServiceImpl(loader, repository, validator);
-        ConsoleUI console = new ConsoleUI(service, loader, new UserInputHandler());
+        ConsoleUI console = new ConsoleUI(quizService, service, loader, new UserInputHandler());
 
         return new ApplicationContext(console, service, repository, loader, validator);
     }
