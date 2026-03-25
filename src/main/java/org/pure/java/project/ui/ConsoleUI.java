@@ -1,16 +1,16 @@
 package org.pure.java.project.ui;
 
-import org.pure.java.project.model.enums.MainMenuOption;
-import org.pure.java.project.model.entity.Question;
 import org.pure.java.project.model.dto.QuestionInputDto;
+import org.pure.java.project.model.entity.Question;
+import org.pure.java.project.model.enums.MainMenuOption;
 import org.pure.java.project.model.result.QuestionSaveResult;
 import org.pure.java.project.service.QuestionLoaderService;
 import org.pure.java.project.service.QuestionService;
+import org.pure.java.project.service.QuizService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Author: Artyom Aroyan
@@ -19,16 +19,18 @@ import java.util.Objects;
  */
 public class ConsoleUI {
     private static final Logger LOGGER = LoggerFactory.getLogger(ConsoleUI.class);
+    private final QuizService quizService;
     private final QuestionService questionService;
     private final QuestionLoaderService loaderService;
-    private final UserInputHandler inputHandler;
+    private final UserInputHandler userInputHandler;
 
     private boolean running = true;
 
-    public ConsoleUI(QuestionService questionService, QuestionLoaderService loaderService, UserInputHandler inputHandler) {
-        this.questionService = Objects.requireNonNull(questionService);
-        this.loaderService = Objects.requireNonNull(loaderService);
-        this.inputHandler = Objects.requireNonNull(inputHandler);
+    public ConsoleUI(QuizService quizService, QuestionService questionService, QuestionLoaderService loaderService, UserInputHandler userInputHandler) {
+        this.quizService = quizService;
+        this.questionService = questionService;
+        this.loaderService = loaderService;
+        this.userInputHandler = userInputHandler;
     }
 
     public void start() {
@@ -37,14 +39,14 @@ public class ConsoleUI {
         while (running) {
             try {
                 printMainMenu();
-                String choice = inputHandler.readLine();
+                String choice = userInputHandler.readLine();
                 handleMainChoice(choice);
             } catch (Exception ex) {
                 LOGGER.error("Unexpected error", ex);
                 IO.println("An error occurred: " + ex.getMessage());
             }
         }
-        inputHandler.close();
+        userInputHandler.close();
         printGoodBye();
     }
 
@@ -67,10 +69,10 @@ public class ConsoleUI {
         IO.println("\n--- Add New Question ---");
 
         try {
-            String question = inputHandler.readLine("Enter question:");
-            List<String> answers = inputHandler.readAnswers("Enter answers (separate with spaces or commas):");
-            int correctIndex = inputHandler.readInt("Enter correct answer index (0-based):");
-            String difficulty = inputHandler.readLine("Enter difficulty (EASY, MEDIUM, HIGH):");
+            String question = userInputHandler.readLine("Enter question:");
+            List<String> answers = userInputHandler.readAnswers("Enter answers (separate with spaces or commas):");
+            int correctIndex = userInputHandler.readInt("Enter correct answer index (0-based):");
+            String difficulty = userInputHandler.readLine("Enter difficulty (EASY, MEDIUM, HIGH):");
             QuestionInputDto inputDto = new QuestionInputDto(question, answers, correctIndex, difficulty);
             QuestionSaveResult result = questionService.save(inputDto);
 
@@ -90,7 +92,7 @@ public class ConsoleUI {
         IO.println("\n--- Read Questions ---");
         printReadMenu();
 
-        String choice = inputHandler.readLine();
+        String choice = userInputHandler.readLine();
 
         try {
             switch (choice) {
@@ -121,8 +123,10 @@ public class ConsoleUI {
         StringBuilder sb = new StringBuilder();
         sb.append("[ID: ")
                 .append(question.id())
-                .append("] ");
-        sb.append(question.question())
+                .append("]");
+        sb.append("\n[Question: ")
+                .append(question.question())
+                .append("]")
                 .append(" (Difficulty: ")
                 .append(question.difficulty())
                 .append(")\n");
@@ -133,27 +137,27 @@ public class ConsoleUI {
                     .append(i)
                     .append(": ")
                     .append(answers.get(i));
-            if (i == question.correctIndex()) {
-                sb.append(" Correct answer");
-            }
             sb.append("\n");
         }
         return sb.toString();
     }
 
     private void handleReadByDifficulty() {
-        String difficulty = inputHandler.readLine("Enter difficulty (EASY, MEDIUM, HIGH):");
+        String difficulty = userInputHandler.readLine("Enter difficulty (EASY, MEDIUM, HIGH):");
         displayQuestions(loaderService.loadByDifficulty(difficulty));
     }
 
     private void handleReadShuffled() {
-        String difficulty = inputHandler.readLine("Enter difficulty (EASY, MEDIUM, HIGH):");
-        int amount = inputHandler.readInt("Enter number of questions:");
+        String difficulty = userInputHandler.readLine("Enter difficulty (EASY, MEDIUM, HIGH):");
+        int amount = userInputHandler.readInt("Enter number of questions:");
         displayQuestions(loaderService.loadShuffleQuestions(difficulty, amount));
     }
 
     private void handleExam() {
-        IO.println("\n---Exam Mode (Coming Soon!) ---");
+        String difficulty = userInputHandler.readLine("Enter difficulty (EASY, MEDIUM, HIGH):");
+        int amount = userInputHandler.readInt("Enter number of questions:");
+        List<Question> questions = loaderService.loadShuffleQuestions(difficulty, amount);
+        quizService.startExam(questions);
     }
 
     private void printWelcome() {

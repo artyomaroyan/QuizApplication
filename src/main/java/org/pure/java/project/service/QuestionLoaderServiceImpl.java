@@ -25,6 +25,29 @@ public class QuestionLoaderServiceImpl implements QuestionLoaderService {
     }
 
     @Override
+    public Optional<Question> findQuestionById(Long id) {
+        if (id == null || id <= 0) {
+            LOGGER.warn("Id can not be null 0 or negative!");
+            return Optional.empty();
+        }
+
+        LOGGER.debug("Attempting to find question with ID: {}", id);
+
+        try {
+            var question = questionRepository.findById(id);
+            if (question.isEmpty()) {
+                LOGGER.info("No question was found with ID: {}", id);
+            } else {
+                LOGGER.debug("Successfully retrieved question: {}", question.get().id());
+            }
+            return question;
+        } catch (Exception e) {
+            LOGGER.error("Error retrieving question with ID: {}", id, e);
+            return Optional.empty();
+        }
+    }
+
+    @Override
     public List<Question> loadAllQuestions() {
         if (cacheEnabled && cache != null) {
             LOGGER.debug("Returning cached questions");

@@ -46,6 +46,16 @@ public class UserInputHandler implements AutoCloseable {
                 .toList();
     }
 
+    public int readAnswer() {
+        while (true) {
+            try {
+                return  Integer.parseInt(readLine());
+            } catch (NumberFormatException ex) {
+                IO.println("Enter valid number");
+            }
+        }
+    }
+
     @Override
     public void close() {
         if (!closed) {
