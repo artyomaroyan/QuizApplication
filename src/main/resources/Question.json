@@ -1,913 +1,901 @@
 [ {
   "id" : 1,
-  "question" : "What is 2 + 2? (1)",
-  "answers" : [ "3", "4", "5", "6" ],
+  "question" : "What is 1 + 1?",
+  "answers" : [ "1", "2", "3", "4" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 2,
-  "question" : "What is 2 + 2? (2)",
-  "answers" : [ "3", "4", "5", "6" ],
+  "question" : "What color is grass?",
+  "answers" : [ "Blue", "Green", "Red", "Yellow" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 3,
-  "question" : "What is 2 + 2? (3)",
-  "answers" : [ "3", "4", "5", "6" ],
-  "correctIndex" : 1,
+  "question" : "How many days are in a week?",
+  "answers" : [ "5", "6", "7", "8" ],
+  "correctIndex" : 2,
   "difficulty" : "EASY"
 }, {
   "id" : 4,
-  "question" : "What is 2 + 2? (4)",
-  "answers" : [ "3", "4", "5", "6" ],
+  "question" : "Which animal barks?",
+  "answers" : [ "Cat", "Dog", "Cow", "Fish" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 5,
-  "question" : "What is 2 + 2? (5)",
-  "answers" : [ "3", "4", "5", "6" ],
-  "correctIndex" : 1,
+  "question" : "What is the capital letter of a?",
+  "answers" : [ "A", "a", "Aa", "@" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 6,
-  "question" : "What color is grass? (1)",
-  "answers" : [ "Blue", "Green", "Red", "Yellow" ],
-  "correctIndex" : 1,
+  "question" : "How many legs does a cat have?",
+  "answers" : [ "2", "3", "4", "5" ],
+  "correctIndex" : 2,
   "difficulty" : "EASY"
 }, {
   "id" : 7,
-  "question" : "What color is grass? (2)",
-  "answers" : [ "Blue", "Green", "Red", "Yellow" ],
+  "question" : "What is frozen water?",
+  "answers" : [ "Steam", "Ice", "Gas", "Fog" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 8,
-  "question" : "What color is grass? (3)",
-  "answers" : [ "Blue", "Green", "Red", "Yellow" ],
+  "question" : "What is 5 - 3?",
+  "answers" : [ "1", "2", "3", "4" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 9,
-  "question" : "What color is grass? (4)",
-  "answers" : [ "Blue", "Green", "Red", "Yellow" ],
+  "question" : "Which is a fruit?",
+  "answers" : [ "Carrot", "Apple", "Potato", "Onion" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 10,
-  "question" : "What color is grass? (5)",
-  "answers" : [ "Blue", "Green", "Red", "Yellow" ],
+  "question" : "What is the sun?",
+  "answers" : [ "Planet", "Star", "Moon", "Rock" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 11,
-  "question" : "How many days are in a week? (1)",
+  "question" : "What is 3 + 4?",
   "answers" : [ "5", "6", "7", "8" ],
   "correctIndex" : 2,
   "difficulty" : "EASY"
 }, {
   "id" : 12,
-  "question" : "How many days are in a week? (2)",
-  "answers" : [ "5", "6", "7", "8" ],
-  "correctIndex" : 2,
+  "question" : "What do you wear on your head?",
+  "answers" : [ "Shoes", "Hat", "Gloves", "Socks" ],
+  "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 13,
-  "question" : "How many days are in a week? (3)",
-  "answers" : [ "5", "6", "7", "8" ],
-  "correctIndex" : 2,
+  "question" : "Which is a color?",
+  "answers" : [ "Blue", "Dog", "Car", "Tree" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 14,
-  "question" : "How many days are in a week? (4)",
-  "answers" : [ "5", "6", "7", "8" ],
+  "question" : "What is 6 - 2?",
+  "answers" : [ "2", "3", "4", "5" ],
   "correctIndex" : 2,
   "difficulty" : "EASY"
 }, {
   "id" : 15,
-  "question" : "How many days are in a week? (5)",
-  "answers" : [ "5", "6", "7", "8" ],
-  "correctIndex" : 2,
+  "question" : "Which is a vehicle?",
+  "answers" : [ "Car", "Tree", "Rock", "Cloud" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 16,
-  "question" : "Which animal barks? (1)",
-  "answers" : [ "Cat", "Dog", "Cow", "Fish" ],
-  "correctIndex" : 1,
+  "question" : "What is 5 + 5?",
+  "answers" : [ "8", "9", "10", "11" ],
+  "correctIndex" : 2,
   "difficulty" : "EASY"
 }, {
   "id" : 17,
-  "question" : "Which animal barks? (2)",
-  "answers" : [ "Cat", "Dog", "Cow", "Fish" ],
+  "question" : "Which is hot?",
+  "answers" : [ "Ice", "Fire", "Snow", "Rain" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 18,
-  "question" : "Which animal barks? (3)",
-  "answers" : [ "Cat", "Dog", "Cow", "Fish" ],
+  "question" : "What is 8 - 3?",
+  "answers" : [ "4", "5", "6", "7" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 19,
-  "question" : "Which animal barks? (4)",
-  "answers" : [ "Cat", "Dog", "Cow", "Fish" ],
-  "correctIndex" : 1,
+  "question" : "Which is an animal?",
+  "answers" : [ "Dog", "Chair", "Table", "Phone" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 20,
-  "question" : "Which animal barks? (5)",
-  "answers" : [ "Cat", "Dog", "Cow", "Fish" ],
+  "question" : "What is 9 + 1?",
+  "answers" : [ "9", "10", "11", "12" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 21,
-  "question" : "What is the capital letter of a? (1)",
-  "answers" : [ "A", "a", "Aa", "@" ],
+  "question" : "Which is used to write?",
+  "answers" : [ "Pen", "Plate", "Cup", "Fork" ],
   "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 22,
-  "question" : "What is the capital letter of a? (2)",
-  "answers" : [ "A", "a", "Aa", "@" ],
-  "correctIndex" : 0,
+  "question" : "What is 7 - 4?",
+  "answers" : [ "2", "3", "4", "5" ],
+  "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 23,
-  "question" : "What is the capital letter of a? (3)",
-  "answers" : [ "A", "a", "Aa", "@" ],
+  "question" : "Which is a bird?",
+  "answers" : [ "Eagle", "Shark", "Whale", "Snake" ],
   "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 24,
-  "question" : "What is the capital letter of a? (4)",
-  "answers" : [ "A", "a", "Aa", "@" ],
-  "correctIndex" : 0,
+  "question" : "What is 2 + 5?",
+  "answers" : [ "6", "7", "8", "9" ],
+  "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 25,
-  "question" : "What is the capital letter of a? (5)",
-  "answers" : [ "A", "a", "Aa", "@" ],
+  "question" : "Which is sweet?",
+  "answers" : [ "Sugar", "Salt", "Pepper", "Rice" ],
   "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 26,
-  "question" : "How many legs does a cat have? (1)",
-  "answers" : [ "2", "3", "4", "5" ],
+  "question" : "What is 4 + 4?",
+  "answers" : [ "6", "7", "8", "9" ],
   "correctIndex" : 2,
   "difficulty" : "EASY"
 }, {
   "id" : 27,
-  "question" : "How many legs does a cat have? (2)",
-  "answers" : [ "2", "3", "4", "5" ],
-  "correctIndex" : 2,
+  "question" : "Which is cold?",
+  "answers" : [ "Ice", "Fire", "Steam", "Sun" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 28,
-  "question" : "How many legs does a cat have? (3)",
-  "answers" : [ "2", "3", "4", "5" ],
-  "correctIndex" : 2,
+  "question" : "What is 6 + 1?",
+  "answers" : [ "6", "7", "8", "9" ],
+  "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 29,
-  "question" : "How many legs does a cat have? (4)",
-  "answers" : [ "2", "3", "4", "5" ],
-  "correctIndex" : 2,
+  "question" : "Which is a shape?",
+  "answers" : [ "Circle", "Dog", "Tree", "Car" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 30,
-  "question" : "How many legs does a cat have? (5)",
-  "answers" : [ "2", "3", "4", "5" ],
-  "correctIndex" : 2,
+  "question" : "What is 3 + 3?",
+  "answers" : [ "5", "6", "7", "8" ],
+  "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 31,
-  "question" : "What is water when frozen? (1)",
-  "answers" : [ "Steam", "Ice", "Gas", "Fog" ],
-  "correctIndex" : 1,
+  "question" : "Which is a number?",
+  "answers" : [ "Five", "Red", "Tree", "Dog" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 32,
-  "question" : "What is water when frozen? (2)",
-  "answers" : [ "Steam", "Ice", "Gas", "Fog" ],
-  "correctIndex" : 1,
+  "question" : "What is 10 - 2?",
+  "answers" : [ "6", "7", "8", "9" ],
+  "correctIndex" : 2,
   "difficulty" : "EASY"
 }, {
   "id" : 33,
-  "question" : "What is water when frozen? (3)",
-  "answers" : [ "Steam", "Ice", "Gas", "Fog" ],
-  "correctIndex" : 1,
+  "question" : "Which is a food?",
+  "answers" : [ "Bread", "Rock", "Glass", "Metal" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 34,
-  "question" : "What is water when frozen? (4)",
-  "answers" : [ "Steam", "Ice", "Gas", "Fog" ],
+  "question" : "What is 2 + 6?",
+  "answers" : [ "7", "8", "9", "10" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 35,
-  "question" : "What is water when frozen? (5)",
-  "answers" : [ "Steam", "Ice", "Gas", "Fog" ],
-  "correctIndex" : 1,
+  "question" : "Which is a body part?",
+  "answers" : [ "Hand", "Chair", "Table", "Phone" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 36,
-  "question" : "What is 5 - 3? (1)",
-  "answers" : [ "1", "2", "3", "4" ],
+  "question" : "What is 9 - 3?",
+  "answers" : [ "5", "6", "7", "8" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 37,
-  "question" : "What is 5 - 3? (2)",
-  "answers" : [ "1", "2", "3", "4" ],
-  "correctIndex" : 1,
+  "question" : "Which is round?",
+  "answers" : [ "Ball", "Stick", "Line", "Edge" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 38,
-  "question" : "What is 5 - 3? (3)",
-  "answers" : [ "1", "2", "3", "4" ],
+  "question" : "What is 5 + 2?",
+  "answers" : [ "6", "7", "8", "9" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 39,
-  "question" : "What is 5 - 3? (4)",
-  "answers" : [ "1", "2", "3", "4" ],
-  "correctIndex" : 1,
+  "question" : "Which is soft?",
+  "answers" : [ "Pillow", "Rock", "Metal", "Glass" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 40,
-  "question" : "What is 5 - 3? (5)",
-  "answers" : [ "1", "2", "3", "4" ],
+  "question" : "What is 8 + 1?",
+  "answers" : [ "8", "9", "10", "11" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 41,
-  "question" : "Which is a fruit? (1)",
-  "answers" : [ "Carrot", "Apple", "Potato", "Onion" ],
-  "correctIndex" : 1,
+  "question" : "Which is tall?",
+  "answers" : [ "Tree", "Ant", "Coin", "Key" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 42,
-  "question" : "Which is a fruit? (2)",
-  "answers" : [ "Carrot", "Apple", "Potato", "Onion" ],
+  "question" : "What is 7 + 2?",
+  "answers" : [ "8", "9", "10", "11" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 43,
-  "question" : "Which is a fruit? (3)",
-  "answers" : [ "Carrot", "Apple", "Potato", "Onion" ],
-  "correctIndex" : 1,
+  "question" : "Which is fast?",
+  "answers" : [ "Car", "Stone", "Tree", "Chair" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 44,
-  "question" : "Which is a fruit? (4)",
-  "answers" : [ "Carrot", "Apple", "Potato", "Onion" ],
+  "question" : "What is 6 + 3?",
+  "answers" : [ "8", "9", "10", "11" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 45,
-  "question" : "Which is a fruit? (5)",
-  "answers" : [ "Carrot", "Apple", "Potato", "Onion" ],
-  "correctIndex" : 1,
+  "question" : "Which is bright?",
+  "answers" : [ "Sun", "Rock", "Mud", "Coal" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 46,
-  "question" : "What is the sun? (1)",
-  "answers" : [ "Planet", "Star", "Moon", "Rock" ],
+  "question" : "What is 4 + 5?",
+  "answers" : [ "8", "9", "10", "11" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 47,
-  "question" : "What is the sun? (2)",
-  "answers" : [ "Planet", "Star", "Moon", "Rock" ],
-  "correctIndex" : 1,
+  "question" : "Which is loud?",
+  "answers" : [ "Drum", "Feather", "Cloud", "Leaf" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 48,
-  "question" : "What is the sun? (3)",
-  "answers" : [ "Planet", "Star", "Moon", "Rock" ],
+  "question" : "What is 3 + 6?",
+  "answers" : [ "8", "9", "10", "11" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 49,
-  "question" : "What is the sun? (4)",
-  "answers" : [ "Planet", "Star", "Moon", "Rock" ],
-  "correctIndex" : 1,
+  "question" : "Which is heavy?",
+  "answers" : [ "Stone", "Feather", "Paper", "Leaf" ],
+  "correctIndex" : 0,
   "difficulty" : "EASY"
 }, {
   "id" : 50,
-  "question" : "What is the sun? (5)",
-  "answers" : [ "Planet", "Star", "Moon", "Rock" ],
+  "question" : "What is 2 + 7?",
+  "answers" : [ "8", "9", "10", "11" ],
   "correctIndex" : 1,
   "difficulty" : "EASY"
 }, {
   "id" : 51,
-  "question" : "What is 12 * 3? (1)",
-  "answers" : [ "24", "36", "30", "18" ],
+  "question" : "What is 12 * 2?",
+  "answers" : [ "20", "24", "26", "28" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 52,
-  "question" : "What is 12 * 3? (2)",
-  "answers" : [ "24", "36", "30", "18" ],
-  "correctIndex" : 1,
+  "question" : "Capital of Italy?",
+  "answers" : [ "Rome", "Paris", "Berlin", "Madrid" ],
+  "correctIndex" : 0,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 53,
-  "question" : "What is 12 * 3? (3)",
-  "answers" : [ "24", "36", "30", "18" ],
+  "question" : "Square root of 49?",
+  "answers" : [ "6", "7", "8", "9" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 54,
-  "question" : "What is 12 * 3? (4)",
-  "answers" : [ "24", "36", "30", "18" ],
+  "question" : "What is 15 + 10?",
+  "answers" : [ "20", "25", "30", "35" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 55,
-  "question" : "What is 12 * 3? (5)",
-  "answers" : [ "24", "36", "30", "18" ],
+  "question" : "What is 100 / 4?",
+  "answers" : [ "20", "25", "30", "40" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 56,
-  "question" : "Capital of Germany? (1)",
-  "answers" : [ "Berlin", "Munich", "Paris", "Rome" ],
+  "question" : "Which planet is closest to Sun?",
+  "answers" : [ "Mercury", "Venus", "Earth", "Mars" ],
   "correctIndex" : 0,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 57,
-  "question" : "Capital of Germany? (2)",
-  "answers" : [ "Berlin", "Munich", "Paris", "Rome" ],
-  "correctIndex" : 0,
+  "question" : "What is 14 - 6?",
+  "answers" : [ "6", "7", "8", "9" ],
+  "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 58,
-  "question" : "Capital of Germany? (3)",
-  "answers" : [ "Berlin", "Munich", "Paris", "Rome" ],
-  "correctIndex" : 0,
+  "question" : "What is 9 * 3?",
+  "answers" : [ "24", "27", "30", "21" ],
+  "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 59,
-  "question" : "Capital of Germany? (4)",
-  "answers" : [ "Berlin", "Munich", "Paris", "Rome" ],
+  "question" : "Which is largest?",
+  "answers" : [ "Elephant", "Cat", "Dog", "Mouse" ],
   "correctIndex" : 0,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 60,
-  "question" : "Capital of Germany? (5)",
-  "answers" : [ "Berlin", "Munich", "Paris", "Rome" ],
-  "correctIndex" : 0,
+  "question" : "What is 81 / 9?",
+  "answers" : [ "7", "8", "9", "10" ],
+  "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 61,
-  "question" : "Square root of 81? (1)",
-  "answers" : [ "7", "8", "9", "10" ],
-  "correctIndex" : 2,
+  "question" : "What is 7 * 6?",
+  "answers" : [ "40", "42", "36", "48" ],
+  "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 62,
-  "question" : "Square root of 81? (2)",
-  "answers" : [ "7", "8", "9", "10" ],
-  "correctIndex" : 2,
+  "question" : "Capital of Spain?",
+  "answers" : [ "Madrid", "Rome", "Paris", "Lisbon" ],
+  "correctIndex" : 0,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 63,
-  "question" : "Square root of 81? (3)",
-  "answers" : [ "7", "8", "9", "10" ],
+  "question" : "What is 11 + 12?",
+  "answers" : [ "21", "22", "23", "24" ],
   "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 64,
-  "question" : "Square root of 81? (4)",
-  "answers" : [ "7", "8", "9", "10" ],
+  "question" : "What is 16 / 2?",
+  "answers" : [ "6", "7", "8", "9" ],
   "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 65,
-  "question" : "Square root of 81? (5)",
-  "answers" : [ "7", "8", "9", "10" ],
+  "question" : "What is 8 * 4?",
+  "answers" : [ "28", "30", "32", "36" ],
   "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 66,
-  "question" : "Which gas do humans breathe? (1)",
-  "answers" : [ "CO2", "Oxygen", "Nitrogen", "Helium" ],
+  "question" : "What is 90 - 45?",
+  "answers" : [ "40", "45", "50", "55" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 67,
-  "question" : "Which gas do humans breathe? (2)",
-  "answers" : [ "CO2", "Oxygen", "Nitrogen", "Helium" ],
-  "correctIndex" : 1,
+  "question" : "What is 25 + 25?",
+  "answers" : [ "40", "45", "50", "55" ],
+  "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 68,
-  "question" : "Which gas do humans breathe? (3)",
-  "answers" : [ "CO2", "Oxygen", "Nitrogen", "Helium" ],
-  "correctIndex" : 1,
+  "question" : "Which is a mammal?",
+  "answers" : [ "Whale", "Shark", "Tuna", "Octopus" ],
+  "correctIndex" : 0,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 69,
-  "question" : "Which gas do humans breathe? (4)",
-  "answers" : [ "CO2", "Oxygen", "Nitrogen", "Helium" ],
+  "question" : "What is 18 / 3?",
+  "answers" : [ "5", "6", "7", "8" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 70,
-  "question" : "Which gas do humans breathe? (5)",
-  "answers" : [ "CO2", "Oxygen", "Nitrogen", "Helium" ],
+  "question" : "What is 6 * 7?",
+  "answers" : [ "40", "42", "36", "48" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 71,
-  "question" : "What is 15% of 200? (1)",
-  "answers" : [ "20", "25", "30", "35" ],
-  "correctIndex" : 2,
+  "question" : "Capital of Greece?",
+  "answers" : [ "Athens", "Rome", "Sofia", "Paris" ],
+  "correctIndex" : 0,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 72,
-  "question" : "What is 15% of 200? (2)",
-  "answers" : [ "20", "25", "30", "35" ],
-  "correctIndex" : 2,
+  "question" : "What is 45 + 5?",
+  "answers" : [ "45", "50", "55", "60" ],
+  "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 73,
-  "question" : "What is 15% of 200? (3)",
-  "answers" : [ "20", "25", "30", "35" ],
-  "correctIndex" : 2,
+  "question" : "What is 72 / 8?",
+  "answers" : [ "8", "9", "10", "7" ],
+  "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 74,
-  "question" : "What is 15% of 200? (4)",
-  "answers" : [ "20", "25", "30", "35" ],
+  "question" : "What is 13 * 2?",
+  "answers" : [ "24", "25", "26", "27" ],
   "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 75,
-  "question" : "What is 15% of 200? (5)",
-  "answers" : [ "20", "25", "30", "35" ],
-  "correctIndex" : 2,
-  "difficulty" : "MEDIUM"
-}, {
-  "id" : 76,
-  "question" : "Which planet is known as the Red Planet? (1)",
-  "answers" : [ "Earth", "Mars", "Jupiter", "Venus" ],
+  "question" : "What is 60 - 20?",
+  "answers" : [ "30", "40", "50", "60" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
+  "id" : 76,
+  "question" : "Which is a gas?",
+  "answers" : [ "Oxygen", "Iron", "Water", "Wood" ],
+  "correctIndex" : 0,
+  "difficulty" : "MEDIUM"
+}, {
   "id" : 77,
-  "question" : "Which planet is known as the Red Planet? (2)",
-  "answers" : [ "Earth", "Mars", "Jupiter", "Venus" ],
+  "question" : "What is 5 * 9?",
+  "answers" : [ "40", "45", "50", "55" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 78,
-  "question" : "Which planet is known as the Red Planet? (3)",
-  "answers" : [ "Earth", "Mars", "Jupiter", "Venus" ],
+  "question" : "What is 100 - 60?",
+  "answers" : [ "30", "40", "50", "60" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 79,
-  "question" : "Which planet is known as the Red Planet? (4)",
-  "answers" : [ "Earth", "Mars", "Jupiter", "Venus" ],
-  "correctIndex" : 1,
+  "question" : "Capital of Germany?",
+  "answers" : [ "Berlin", "Paris", "Rome", "Vienna" ],
+  "correctIndex" : 0,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 80,
-  "question" : "Which planet is known as the Red Planet? (5)",
-  "answers" : [ "Earth", "Mars", "Jupiter", "Venus" ],
+  "question" : "What is 36 / 6?",
+  "answers" : [ "5", "6", "7", "8" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 81,
-  "question" : "How many degrees in a triangle? (1)",
-  "answers" : [ "90", "180", "360", "270" ],
+  "question" : "What is 8 * 7?",
+  "answers" : [ "54", "56", "58", "60" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 82,
-  "question" : "How many degrees in a triangle? (2)",
-  "answers" : [ "90", "180", "360", "270" ],
+  "question" : "What is 22 + 8?",
+  "answers" : [ "28", "30", "32", "34" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 83,
-  "question" : "How many degrees in a triangle? (3)",
-  "answers" : [ "90", "180", "360", "270" ],
-  "correctIndex" : 1,
+  "question" : "What is 50 / 5?",
+  "answers" : [ "8", "9", "10", "11" ],
+  "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 84,
-  "question" : "How many degrees in a triangle? (4)",
-  "answers" : [ "90", "180", "360", "270" ],
-  "correctIndex" : 1,
+  "question" : "What is 11 * 3?",
+  "answers" : [ "30", "31", "32", "33" ],
+  "correctIndex" : 3,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 85,
-  "question" : "How many degrees in a triangle? (5)",
-  "answers" : [ "90", "180", "360", "270" ],
-  "correctIndex" : 1,
+  "question" : "What is 99 - 9?",
+  "answers" : [ "80", "85", "90", "95" ],
+  "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 86,
-  "question" : "What is 9^2? (1)",
-  "answers" : [ "18", "81", "27", "72" ],
+  "question" : "Which is a prime number?",
+  "answers" : [ "9", "11", "15", "21" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 87,
-  "question" : "What is 9^2? (2)",
-  "answers" : [ "18", "81", "27", "72" ],
-  "correctIndex" : 1,
+  "question" : "What is 20 * 2?",
+  "answers" : [ "30", "35", "40", "45" ],
+  "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 88,
-  "question" : "What is 9^2? (3)",
-  "answers" : [ "18", "81", "27", "72" ],
+  "question" : "What is 81 - 1?",
+  "answers" : [ "79", "80", "81", "82" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 89,
-  "question" : "What is 9^2? (4)",
-  "answers" : [ "18", "81", "27", "72" ],
-  "correctIndex" : 1,
+  "question" : "What is 64 / 8?",
+  "answers" : [ "6", "7", "8", "9" ],
+  "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 90,
-  "question" : "What is 9^2? (5)",
-  "answers" : [ "18", "81", "27", "72" ],
-  "correctIndex" : 1,
+  "question" : "Capital of Japan?",
+  "answers" : [ "Tokyo", "Seoul", "Beijing", "Bangkok" ],
+  "correctIndex" : 0,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 91,
-  "question" : "Largest continent? (1)",
-  "answers" : [ "Africa", "Asia", "Europe", "Australia" ],
+  "question" : "What is 7 * 8?",
+  "answers" : [ "54", "56", "58", "60" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 92,
-  "question" : "Largest continent? (2)",
-  "answers" : [ "Africa", "Asia", "Europe", "Australia" ],
-  "correctIndex" : 1,
+  "question" : "What is 100 / 10?",
+  "answers" : [ "8", "9", "10", "11" ],
+  "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 93,
-  "question" : "Largest continent? (3)",
-  "answers" : [ "Africa", "Asia", "Europe", "Australia" ],
+  "question" : "What is 45 / 5?",
+  "answers" : [ "8", "9", "10", "11" ],
   "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 94,
-  "question" : "Largest continent? (4)",
-  "answers" : [ "Africa", "Asia", "Europe", "Australia" ],
-  "correctIndex" : 1,
+  "question" : "What is 12 * 4?",
+  "answers" : [ "44", "46", "48", "50" ],
+  "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 95,
-  "question" : "Largest continent? (5)",
-  "answers" : [ "Africa", "Asia", "Europe", "Australia" ],
-  "correctIndex" : 1,
+  "question" : "What is 27 + 3?",
+  "answers" : [ "28", "29", "30", "31" ],
+  "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 96,
-  "question" : "Who wrote Hamlet? (1)",
-  "answers" : [ "Shakespeare", "Homer", "Dante", "Goethe" ],
-  "correctIndex" : 0,
+  "question" : "What is 18 * 2?",
+  "answers" : [ "34", "36", "38", "40" ],
+  "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 97,
-  "question" : "Who wrote Hamlet? (2)",
-  "answers" : [ "Shakespeare", "Homer", "Dante", "Goethe" ],
-  "correctIndex" : 0,
+  "question" : "What is 49 + 1?",
+  "answers" : [ "48", "49", "50", "51" ],
+  "correctIndex" : 2,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 98,
-  "question" : "Who wrote Hamlet? (3)",
-  "answers" : [ "Shakespeare", "Homer", "Dante", "Goethe" ],
-  "correctIndex" : 0,
+  "question" : "What is 70 - 20?",
+  "answers" : [ "40", "50", "60", "70" ],
+  "correctIndex" : 1,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 99,
-  "question" : "Who wrote Hamlet? (4)",
-  "answers" : [ "Shakespeare", "Homer", "Dante", "Goethe" ],
+  "question" : "Which is a continent?",
+  "answers" : [ "Asia", "France", "Berlin", "Amazon" ],
   "correctIndex" : 0,
   "difficulty" : "MEDIUM"
 }, {
   "id" : 100,
-  "question" : "Who wrote Hamlet? (5)",
-  "answers" : [ "Shakespeare", "Homer", "Dante", "Goethe" ],
-  "correctIndex" : 0,
-  "difficulty" : "MEDIUM"
+  "question" : "What is 2^10?",
+  "answers" : [ "512", "1024", "2048", "4096" ],
+  "correctIndex" : 1,
+  "difficulty" : "HIGH"
 }, {
   "id" : 101,
-  "question" : "What is the derivative of x^3? (1)",
-  "answers" : [ "x^2", "3x^2", "x^3", "3x" ],
+  "question" : "Derivative of x^2?",
+  "answers" : [ "x", "2x", "x^2", "2" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 102,
-  "question" : "What is the derivative of x^3? (2)",
-  "answers" : [ "x^2", "3x^2", "x^3", "3x" ],
-  "correctIndex" : 1,
+  "question" : "Binary of 8?",
+  "answers" : [ "1000", "1010", "1100", "1110" ],
+  "correctIndex" : 0,
   "difficulty" : "HIGH"
 }, {
   "id" : 103,
-  "question" : "What is the derivative of x^3? (3)",
-  "answers" : [ "x^2", "3x^2", "x^3", "3x" ],
-  "correctIndex" : 1,
+  "question" : "What is 7! ?",
+  "answers" : [ "5040", "720", "120", "40320" ],
+  "correctIndex" : 0,
   "difficulty" : "HIGH"
 }, {
   "id" : 104,
-  "question" : "What is the derivative of x^3? (4)",
-  "answers" : [ "x^2", "3x^2", "x^3", "3x" ],
-  "correctIndex" : 1,
+  "question" : "Integral of x dx?",
+  "answers" : [ "x^2/2", "x", "1", "2x" ],
+  "correctIndex" : 0,
   "difficulty" : "HIGH"
 }, {
   "id" : 105,
-  "question" : "What is the derivative of x^3? (5)",
-  "answers" : [ "x^2", "3x^2", "x^3", "3x" ],
+  "question" : "What is 3^5?",
+  "answers" : [ "125", "243", "81", "729" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 106,
-  "question" : "Binary of 15? (1)",
-  "answers" : [ "1111", "1010", "1101", "1001" ],
-  "correctIndex" : 0,
+  "question" : "Next prime after 13?",
+  "answers" : [ "15", "17", "19", "21" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 107,
-  "question" : "Binary of 15? (2)",
-  "answers" : [ "1111", "1010", "1101", "1001" ],
-  "correctIndex" : 0,
+  "question" : "What is log10(100)?",
+  "answers" : [ "1", "2", "3", "4" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 108,
-  "question" : "Binary of 15? (3)",
-  "answers" : [ "1111", "1010", "1101", "1001" ],
-  "correctIndex" : 0,
+  "question" : "What is 12^2?",
+  "answers" : [ "124", "144", "154", "164" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 109,
-  "question" : "Binary of 15? (4)",
-  "answers" : [ "1111", "1010", "1101", "1001" ],
-  "correctIndex" : 0,
+  "question" : "What is 5^4?",
+  "answers" : [ "525", "625", "725", "825" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 110,
-  "question" : "Binary of 15? (5)",
-  "answers" : [ "1111", "1010", "1101", "1001" ],
-  "correctIndex" : 0,
+  "question" : "What is sqrt(121)?",
+  "answers" : [ "10", "11", "12", "13" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 111,
-  "question" : "Time complexity of quicksort average? (1)",
-  "answers" : [ "O(n)", "O(log n)", "O(n log n)", "O(n^2)" ],
-  "correctIndex" : 2,
+  "question" : "Binary of 5?",
+  "answers" : [ "101", "111", "110", "100" ],
+  "correctIndex" : 0,
   "difficulty" : "HIGH"
 }, {
   "id" : 112,
-  "question" : "Time complexity of quicksort average? (2)",
-  "answers" : [ "O(n)", "O(log n)", "O(n log n)", "O(n^2)" ],
-  "correctIndex" : 2,
+  "question" : "What is 9^3?",
+  "answers" : [ "729", "512", "343", "216" ],
+  "correctIndex" : 0,
   "difficulty" : "HIGH"
 }, {
   "id" : 113,
-  "question" : "Time complexity of quicksort average? (3)",
-  "answers" : [ "O(n)", "O(log n)", "O(n log n)", "O(n^2)" ],
+  "question" : "What is 1000 / 10?",
+  "answers" : [ "10", "50", "100", "200" ],
   "correctIndex" : 2,
   "difficulty" : "HIGH"
 }, {
   "id" : 114,
-  "question" : "Time complexity of quicksort average? (4)",
-  "answers" : [ "O(n)", "O(log n)", "O(n log n)", "O(n^2)" ],
-  "correctIndex" : 2,
+  "question" : "What is 2^8?",
+  "answers" : [ "128", "256", "512", "1024" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 115,
-  "question" : "Time complexity of quicksort average? (5)",
-  "answers" : [ "O(n)", "O(log n)", "O(n log n)", "O(n^2)" ],
-  "correctIndex" : 2,
+  "question" : "Next prime after 19?",
+  "answers" : [ "21", "23", "25", "27" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 116,
-  "question" : "What is 2^10? (1)",
-  "answers" : [ "512", "1024", "2048", "256" ],
+  "question" : "What is 14^2?",
+  "answers" : [ "186", "196", "206", "216" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 117,
-  "question" : "What is 2^10? (2)",
-  "answers" : [ "512", "1024", "2048", "256" ],
-  "correctIndex" : 1,
+  "question" : "What is 6^3?",
+  "answers" : [ "216", "126", "256", "196" ],
+  "correctIndex" : 0,
   "difficulty" : "HIGH"
 }, {
   "id" : 118,
-  "question" : "What is 2^10? (3)",
-  "answers" : [ "512", "1024", "2048", "256" ],
+  "question" : "What is 4^5?",
+  "answers" : [ "512", "1024", "256", "128" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 119,
-  "question" : "What is 2^10? (4)",
-  "answers" : [ "512", "1024", "2048", "256" ],
+  "question" : "What is sqrt(81)?",
+  "answers" : [ "8", "9", "10", "7" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 120,
-  "question" : "What is 2^10? (5)",
-  "answers" : [ "512", "1024", "2048", "256" ],
+  "question" : "What is 10^3?",
+  "answers" : [ "100", "1000", "10000", "10" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 121,
-  "question" : "Next prime after 47? (1)",
-  "answers" : [ "48", "49", "53", "51" ],
-  "correctIndex" : 2,
-  "difficulty" : "HIGH"
-}, {
-  "id" : 122,
-  "question" : "Next prime after 47? (2)",
-  "answers" : [ "48", "49", "53", "51" ],
-  "correctIndex" : 2,
-  "difficulty" : "HIGH"
-}, {
-  "id" : 123,
-  "question" : "Next prime after 47? (3)",
-  "answers" : [ "48", "49", "53", "51" ],
-  "correctIndex" : 2,
-  "difficulty" : "HIGH"
-}, {
-  "id" : 124,
-  "question" : "Next prime after 47? (4)",
-  "answers" : [ "48", "49", "53", "51" ],
-  "correctIndex" : 2,
-  "difficulty" : "HIGH"
-}, {
-  "id" : 125,
-  "question" : "Next prime after 47? (5)",
-  "answers" : [ "48", "49", "53", "51" ],
-  "correctIndex" : 2,
-  "difficulty" : "HIGH"
-}, {
-  "id" : 126,
-  "question" : "Who developed relativity? (1)",
-  "answers" : [ "Newton", "Einstein", "Tesla", "Bohr" ],
+  "question" : "What is 2^6?",
+  "answers" : [ "32", "64", "128", "16" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
+  "id" : 122,
+  "question" : "Binary of 3?",
+  "answers" : [ "11", "10", "01", "100" ],
+  "correctIndex" : 0,
+  "difficulty" : "HIGH"
+}, {
+  "id" : 123,
+  "question" : "What is 11^2?",
+  "answers" : [ "121", "111", "131", "141" ],
+  "correctIndex" : 0,
+  "difficulty" : "HIGH"
+}, {
+  "id" : 124,
+  "question" : "What is 13^2?",
+  "answers" : [ "159", "169", "179", "189" ],
+  "correctIndex" : 1,
+  "difficulty" : "HIGH"
+}, {
+  "id" : 125,
+  "question" : "What is 8^3?",
+  "answers" : [ "512", "256", "128", "64" ],
+  "correctIndex" : 0,
+  "difficulty" : "HIGH"
+}, {
+  "id" : 126,
+  "question" : "What is 15^2?",
+  "answers" : [ "205", "215", "225", "235" ],
+  "correctIndex" : 2,
+  "difficulty" : "HIGH"
+}, {
   "id" : 127,
-  "question" : "Who developed relativity? (2)",
-  "answers" : [ "Newton", "Einstein", "Tesla", "Bohr" ],
+  "question" : "What is 16^2?",
+  "answers" : [ "246", "256", "266", "276" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 128,
-  "question" : "Who developed relativity? (3)",
-  "answers" : [ "Newton", "Einstein", "Tesla", "Bohr" ],
+  "question" : "What is 25^2?",
+  "answers" : [ "525", "625", "725", "825" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 129,
-  "question" : "Who developed relativity? (4)",
-  "answers" : [ "Newton", "Einstein", "Tesla", "Bohr" ],
+  "question" : "What is 30^2?",
+  "answers" : [ "800", "900", "1000", "1100" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 130,
-  "question" : "Who developed relativity? (5)",
-  "answers" : [ "Newton", "Einstein", "Tesla", "Bohr" ],
+  "question" : "What is 18^2?",
+  "answers" : [ "314", "324", "334", "344" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 131,
-  "question" : "Integral of 1 dx? (1)",
-  "answers" : [ "x", "1", "0", "x^2" ],
-  "correctIndex" : 0,
+  "question" : "What is 19^2?",
+  "answers" : [ "351", "361", "371", "381" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 132,
-  "question" : "Integral of 1 dx? (2)",
-  "answers" : [ "x", "1", "0", "x^2" ],
-  "correctIndex" : 0,
+  "question" : "What is 20^2?",
+  "answers" : [ "300", "350", "400", "450" ],
+  "correctIndex" : 2,
   "difficulty" : "HIGH"
 }, {
   "id" : 133,
-  "question" : "Integral of 1 dx? (3)",
-  "answers" : [ "x", "1", "0", "x^2" ],
-  "correctIndex" : 0,
+  "question" : "What is 21^2?",
+  "answers" : [ "421", "431", "441", "451" ],
+  "correctIndex" : 2,
   "difficulty" : "HIGH"
 }, {
   "id" : 134,
-  "question" : "Integral of 1 dx? (4)",
-  "answers" : [ "x", "1", "0", "x^2" ],
-  "correctIndex" : 0,
+  "question" : "What is 22^2?",
+  "answers" : [ "474", "484", "494", "504" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 135,
-  "question" : "Integral of 1 dx? (5)",
-  "answers" : [ "x", "1", "0", "x^2" ],
-  "correctIndex" : 0,
+  "question" : "What is 23^2?",
+  "answers" : [ "519", "529", "539", "549" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 136,
-  "question" : "What is hexadecimal of 255? (1)",
-  "answers" : [ "FF", "AA", "F0", "0F" ],
-  "correctIndex" : 0,
+  "question" : "What is 24^2?",
+  "answers" : [ "566", "576", "586", "596" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 137,
-  "question" : "What is hexadecimal of 255? (2)",
-  "answers" : [ "FF", "AA", "F0", "0F" ],
-  "correctIndex" : 0,
+  "question" : "What is 26^2?",
+  "answers" : [ "666", "676", "686", "696" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 138,
-  "question" : "What is hexadecimal of 255? (3)",
-  "answers" : [ "FF", "AA", "F0", "0F" ],
-  "correctIndex" : 0,
+  "question" : "What is 27^2?",
+  "answers" : [ "719", "729", "739", "749" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 139,
-  "question" : "What is hexadecimal of 255? (4)",
-  "answers" : [ "FF", "AA", "F0", "0F" ],
-  "correctIndex" : 0,
+  "question" : "What is 28^2?",
+  "answers" : [ "774", "784", "794", "804" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 140,
-  "question" : "What is hexadecimal of 255? (5)",
-  "answers" : [ "FF", "AA", "F0", "0F" ],
-  "correctIndex" : 0,
+  "question" : "What is 29^2?",
+  "answers" : [ "831", "841", "851", "861" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 141,
-  "question" : "Which data structure uses LIFO? (1)",
-  "answers" : [ "Queue", "Stack", "Tree", "Graph" ],
+  "question" : "What is 31^2?",
+  "answers" : [ "951", "961", "971", "981" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 142,
-  "question" : "Which data structure uses LIFO? (2)",
-  "answers" : [ "Queue", "Stack", "Tree", "Graph" ],
+  "question" : "What is 32^2?",
+  "answers" : [ "1004", "1024", "1044", "1064" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 143,
-  "question" : "Which data structure uses LIFO? (3)",
-  "answers" : [ "Queue", "Stack", "Tree", "Graph" ],
+  "question" : "What is 33^2?",
+  "answers" : [ "1079", "1089", "1099", "1109" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 144,
-  "question" : "Which data structure uses LIFO? (4)",
-  "answers" : [ "Queue", "Stack", "Tree", "Graph" ],
+  "question" : "What is 34^2?",
+  "answers" : [ "1146", "1156", "1166", "1176" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 145,
-  "question" : "Which data structure uses LIFO? (5)",
-  "answers" : [ "Queue", "Stack", "Tree", "Graph" ],
+  "question" : "What is 35^2?",
+  "answers" : [ "1215", "1225", "1235", "1245" ],
   "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 146,
-  "question" : "What is 7! ? (1)",
-  "answers" : [ "5040", "720", "120", "40320" ],
-  "correctIndex" : 0,
+  "question" : "What is 36^2?",
+  "answers" : [ "1286", "1296", "1306", "1316" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 147,
-  "question" : "What is 7! ? (2)",
-  "answers" : [ "5040", "720", "120", "40320" ],
-  "correctIndex" : 0,
+  "question" : "What is 37^2?",
+  "answers" : [ "1359", "1369", "1379", "1389" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 148,
-  "question" : "What is 7! ? (3)",
-  "answers" : [ "5040", "720", "120", "40320" ],
-  "correctIndex" : 0,
+  "question" : "What is 38^2?",
+  "answers" : [ "1434", "1444", "1454", "1464" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 149,
-  "question" : "What is 7! ? (4)",
-  "answers" : [ "5040", "720", "120", "40320" ],
-  "correctIndex" : 0,
+  "question" : "What is 39^2?",
+  "answers" : [ "1511", "1521", "1531", "1541" ],
+  "correctIndex" : 1,
   "difficulty" : "HIGH"
 }, {
   "id" : 150,
-  "question" : "What is 7! ? (5)",
-  "answers" : [ "5040", "720", "120", "40320" ],
-  "correctIndex" : 0,
-  "difficulty" : "HIGH"
-}, {
-  "id" : 151,
-  "question" : "testing question?",
-  "answers" : [ "a", "d", "f", "s" ],
-  "correctIndex" : 3,
-  "difficulty" : "EASY"
-}, {
-  "id" : 152,
-  "question" : "testing question add?",
-  "answers" : [ "a", "s", "d", "s" ],
-  "correctIndex" : 2,
+  "question" : "test question?",
+  "answers" : [ "a", "a", "a", "a" ],
+  "correctIndex" : 1,
   "difficulty" : "EASY"
 } ]

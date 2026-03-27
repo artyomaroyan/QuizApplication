@@ -10,7 +10,9 @@ import org.pure.java.project.service.QuizService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Author: Artyom Aroyan
@@ -156,7 +158,7 @@ public class ConsoleUI {
     private void handleExam() {
         String difficulty = userInputHandler.readLine("Enter difficulty (EASY, MEDIUM, HIGH):");
         int amount = userInputHandler.readInt("Enter number of questions:");
-        List<Question> questions = loaderService.loadShuffleQuestions(difficulty, amount);
+        Set<Question> questions = new HashSet<>(loaderService.loadShuffleQuestions(difficulty, amount));
         quizService.startExam(questions);
     }
 

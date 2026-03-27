@@ -2,7 +2,7 @@ package org.pure.java.project.service;
 
 import org.pure.java.project.model.entity.Question;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * Author: Artyom Aroyan
@@ -10,5 +10,5 @@ import java.util.List;
  * Time: 00:01:40
  */
 public interface QuizService {
-    void startExam(List<Question> questions);
+    void startExam(Set<Question> questions);
 }

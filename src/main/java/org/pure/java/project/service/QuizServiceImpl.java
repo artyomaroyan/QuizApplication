@@ -3,7 +3,7 @@ package org.pure.java.project.service;
 import org.pure.java.project.model.entity.Question;
 import org.pure.java.project.ui.UserInputHandler;
 
-import java.util.List;
+import java.util.Set;
 
 /**
  * Author: Artyom Aroyan
@@ -18,7 +18,7 @@ public class QuizServiceImpl implements QuizService {
     }
 
     @Override
-    public void startExam(List<Question> questions) {
+    public void startExam(Set<Question> questions) {
         int score = 0;
 
         for (Question q : questions) {
